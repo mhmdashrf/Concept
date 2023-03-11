@@ -1,0 +1,763 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #06262d;
+}
+/*=============================================
+=           start header         =
+=============================================*/
+
+header {
+  background-color: #06262d;
+  padding: 15px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  padding: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: relative;
+}
+header nav ul li a:hover {
+  color: #78a340;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav ul li a::after {
+  content: " ";
+  position: absolute;
+  height: 4px;
+  width: 0;
+  background-color: #78a340;
+  left: 50%;
+  bottom: -10px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+header nav ul li a:hover::after {
+  opacity: 1;
+  width: 100%;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+/*=============================================
+=           end header         =
+=============================================*/
+
+/*=============================================
+=           start concept         =
+=============================================*/
+.hero {
+  position: relative;
+  background-color: #06262d;
+  background-image: url(./imgs/hero.png);
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: top left;
+}
+.hero .concept {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col55 {
+  flex: 0 0 55%;
+}
+.col45 {
+  flex: 0 0 45%;
+}
+
+.concept .heading {
+  font-size: 35px;
+  background-color: #06262d;
+  padding: 20px;
+  color: #fff;
+  margin-top: 70px;
+  font-weight: bolder;
+}
+.concept .form {
+  background-color: #fff;
+  max-width: 400px;
+  height: 500px;
+  margin: 2px auto;
+  padding: 40px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.concept .form input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  border: 2px #aaa solid;
+  outline: none;
+  border-radius: 5px;
+}
+.concept .form h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.concept .form input::placeholder {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left: 15px;
+  color: #aaa;
+}
+
+.concept .form .flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.concept .form .flex .button button {
+  width: 160px;
+  height: 50px;
+  background-color: #78a340;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 25px;
+  transition: all 0.5s ease-in-out;
+}
+.concept .form .flex .button button:hover {
+  background-color: #06262d;
+  transition: all 0.5s ease-in-out;
+}
+
+.concept .form .flex .font {
+  font-size: 20px;
+  padding-top: 15px;
+  color: #aaa;
+}
+.concept .form .flex .font i {
+  padding-left: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.concept .form .flex .font i:hover {
+  color: #06262d;
+  transition: all 0.5s ease-in-out;
+}
+/*=============================================
+=           end concept        =
+=============================================*/
+
+/*=============================================
+=           start container       =
+=============================================*/
+.container {
+  background-color: #06262d;
+  overflow: hidden;
+  color: #fff;
+  padding: 100px;
+}
+
+.container .ph1 {
+  margin-bottom: 50px;
+}
+.container .ph1 h2 {
+  font-size: 30px;
+  position: relative;
+}
+.container .ph1 p {
+  width: 75%;
+  line-height: 1.2;
+  font-size: 17px;
+}
+.container .ph2-ph3 {
+  display: flex;
+  justify-content: space-between;
+}
+.container .ph2 h2 {
+  font-size: 30px;
+  position: relative;
+}
+.container .ph2 p {
+  width: 60%;
+  line-height: 1.2;
+  font-size: 17px;
+}
+.container .ph3 h2 {
+  font-size: 30px;
+  position: relative;
+}
+.container .ph3 p {
+  width: 60%;
+  line-height: 1.2;
+  font-size: 17px;
+}
+.container .ph1 h2::after {
+  content: " ";
+  position: absolute;
+  background-color: #78a340;
+  width: 6%;
+  height: 4px;
+  left: 0;
+  bottom: -8px;
+}
+.container .ph2 h2::after {
+  content: " ";
+  position: absolute;
+  background-color: #78a340;
+  width: 15%;
+  height: 4px;
+  left: 0;
+  bottom: -8px;
+}
+.container .ph3 h2::after {
+  content: " ";
+  position: absolute;
+  background-color: #78a340;
+  width: 13%;
+  height: 4px;
+  left: 0;
+  bottom: -8px;
+}
+/*=============================================
+=           end container         =
+=============================================*/
+
+/*=============================================
+=           start values        =
+=============================================*/
+.values {
+  color: #fff;
+  background-color: #06262d;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.values .style {
+  width: 50%;
+  background-color: #78a340;
+  padding: 20px 0px 20px 95px;
+}
+.values .style h2 {
+  font-size: 30px;
+  position: relative;
+}
+.values .style p {
+  width: 70%;
+  line-height: 1.2;
+  font-size: 16px;
+}
+.values .style h2::after {
+  content: " ";
+  position: absolute;
+  background-color: #fff;
+  width: 10%;
+  height: 4px;
+  left: 0;
+  bottom: -8px;
+}
+/*=============================================
+=           end header         =
+=============================================*/
+
+/*=============================================
+=           start contact         =
+=============================================*/
+.contant {
+  background-color: #06262d;
+  display: flex;
+  color: #fff;
+}
+.big-div {
+  padding: 80px;
+}
+.contant .img img {
+  width: 420px;
+}
+.contant .icons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contant .icons > div {
+  width: 33.3333%;
+  margin-bottom: 80px;
+}
+.contant .icons li {
+  list-style: none;
+}
+.contant .icons li img {
+  width: 40%;
+}
+.contant .tools {
+  margin-bottom: 50px;
+  padding-left: 20px;
+}
+.contant .tools h2 {
+  font-size: 40px;
+  position: relative;
+}
+
+.contant .tools p {
+  width: 70%;
+  line-height: 1.2;
+  font-size: 16px;
+}
+.contant .icons h6 {
+  font-size: 15px;
+  font-style: italic;
+  margin: 30px;
+  text-transform: uppercase;
+}
+.contant .tools h2::after {
+  content: " ";
+  position: absolute;
+  background-color: #78a340;
+  width: 10%;
+  height: 4px;
+  left: 0;
+  bottom: -8px;
+}
+/*=============================================
+=           end contant         =
+=============================================*/
+
+/*=============================================
+=           start slider         =
+=============================================*/
+.order {
+  background-color: #06262d;
+  overflow: hidden;
+  height: 450px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider .six-img {
+  display: flex;
+  width: 100%;
+}
+.slider .six-img li {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-left: 10px;
+}
+.slider .six-img li img {
+  height: 50px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+}
+.partners {
+  position: relative;
+  margin: 80px;
+  color: #fff;
+}
+
+.partners h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  position: relative;
+}
+.partners p {
+  width: 60%;
+  line-height: 1.2;
+  font-size: 16px;
+}
+.partners h2::after {
+  content: " ";
+  position: absolute;
+  background-color: #78a340;
+  width: 10%;
+  height: 4px;
+  left: 0;
+  bottom: -8px;
+}
+/*=============================================
+=           end slider         =
+=============================================*/
+/*=============================================
+=           start info         =
+=============================================*/
+.info {
+  padding-left: 100px;
+  background-color: #fff;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+.info .contact-info h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+  position: relative;
+}
+.info .contact-info h2::after {
+  content: " ";
+  position: absolute;
+  background-color: #78a340;
+  width: 10%;
+  height: 4px;
+  left: 0;
+  bottom: -8px;
+}
+
+.about .there {
+  display: flex;
+  flex: 0 0 60%;
+}
+.about .there > div {
+  display: flex;
+  padding-right: 50px;
+}
+.about .there img {
+  height: 30px;
+}
+.about .there h4 {
+  font-size: 20px;
+  color: #06262d;
+  margin: 20px;
+}
+
+.about .list {
+  flex: 0 0 40%;
+  margin-top: 20px;
+}
+.about .list i {
+  padding-right: 40px;
+  color: #aaa;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+}
+.about .list i:hover {
+  color: #78a340;
+  transition: all 0.5s ease-in-out;
+}
+/*=============================================
+=           end info       =
+=============================================*/
+
+/*=============================================
+=           start the end         =
+=============================================*/
+.end {
+  text-align: center;
+  background-color: #06262d;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.918);
+}
+/*=============================================
+=           end _ end         =
+=============================================*/
+@media (max-width: 1199px) {
+  header nav ul {
+    display: none;
+  }
+  .concept {
+    flex-direction: column;
+  }
+  .col55,
+  .col45 {
+    flex: 0 0 100%;
+  }
+  .concept .heading {
+    font-size: 20px;
+  }
+  .hero {
+    width: 100%;
+  }
+  .container {
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 20px;
+  }
+  .container .ph1 p {
+    width: 100%;
+  }
+  .container .ph2-ph3 {
+    flex-direction: column;
+  }
+  .ph2,
+  .ph3 {
+    width: 100%;
+  }
+  .container .ph2 p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .container .ph3 p {
+    width: 100%;
+  }
+  .values {
+    margin-top: 80px;
+  }
+
+  .values .style {
+    padding: 20px 20px 20px 20px;
+  }
+  .values .style p {
+    width: 100%;
+  }
+  .values .style {
+    width: 100%;
+  }
+  .concept {
+    margin-bottom: 0;
+  }
+  .contant .img img {
+    display: none;
+  }
+  .contant .tools {
+    padding: 0;
+  }
+  .contant .tools p {
+    width: 90%;
+  }
+  .contant .icons > div {
+    width: 40%;
+    text-align: center;
+  }
+  .contant .icons li img {
+    width: 70%;
+  }
+  .contant .icons h6 {
+    font-size: 20px;
+  }
+  .partners p {
+    width: 100%;
+  }
+  .partners {
+    margin: 0 0px 80px 20px;
+  }
+
+  .about {
+    flex: 0 0 100%;
+  }
+  .about .list {
+    flex: 0 0 30%;
+  }
+  .about .there {
+    flex: 0 0 70%;
+  }
+  .about .there h4 {
+    font-size: 15px;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  header nav ul {
+    display: none;
+  }
+  .concept {
+    flex-direction: column;
+  }
+  .col55,
+  .col45 {
+    flex: 0 0 100%;
+  }
+  .concept .heading {
+    font-size: 20px;
+  }
+  .hero {
+    width: 100%;
+  }
+  .container {
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 20px;
+  }
+  .container .ph1 p {
+    width: 100%;
+  }
+  .container .ph2-ph3 {
+    flex-direction: column;
+  }
+  .ph2,
+  .ph3 {
+    width: 100%;
+  }
+  .container .ph2 p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .container .ph3 p {
+    width: 100%;
+  }
+  .values {
+    margin-top: 80px;
+  }
+
+  .values .style {
+    padding: 20px 20px 20px 20px;
+  }
+  .values .style p {
+    width: 100%;
+  }
+  .values .style {
+    width: 100%;
+  }
+  .concept {
+    margin-bottom: 0;
+  }
+  .contant .img img {
+    display: none;
+  }
+  .contant .tools {
+    padding: 0;
+  }
+  .contant .tools p {
+    width: 90%;
+  }
+  .contant .icons > div {
+    width: 40%;
+    text-align: center;
+  }
+  .contant .icons li img {
+    width: 100%;
+  }
+  .contant .icons h6 {
+    font-size: 10px;
+  }
+  .partners p {
+    width: 100%;
+  }
+  .partners {
+    margin: 0 0px 80px 20px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about,
+  .there {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  header nav ul {
+    display: none;
+  }
+  .concept {
+    flex-direction: column;
+  }
+  .col55,
+  .col45 {
+    flex: 0 0 100%;
+  }
+  .concept .heading {
+    font-size: 20px;
+  }
+  .hero {
+    width: 100%;
+  }
+  .container {
+    padding: 0px 0px 0px 20px;
+    margin-bottom: 20px;
+  }
+  .container .ph1 p {
+    width: 100%;
+  }
+  .container .ph2-ph3 {
+    flex-direction: column;
+  }
+  .ph2,
+  .ph3 {
+    width: 100%;
+  }
+  .container .ph2 p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .container .ph3 p {
+    width: 100%;
+  }
+  .values {
+    margin-top: 80px;
+  }
+
+  .values .style {
+    padding: 20px 20px 20px 20px;
+  }
+  .values .style p {
+    width: 100%;
+  }
+  .values .style {
+    width: 100%;
+  }
+  .concept {
+    margin-bottom: 0;
+  }
+  .contant .img img {
+    display: none;
+  }
+  .contant .tools {
+    padding: 0;
+  }
+  .contant .tools p {
+    width: 90%;
+  }
+  .contant .icons > div {
+    width: 40%;
+    text-align: center;
+  }
+  .contant .icons li img {
+    width: 100%;
+  }
+  .contant .icons h6 {
+    font-size: 10px;
+  }
+  .partners p {
+    width: 100%;
+  }
+  .partners {
+    margin: 0 0px 80px 20px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .about,
+  .there {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .concept .form input {
+    width: 100%;
+    height: 40px;
+  }
+  .concept .form {
+    width: 70%;
+    height: 450px;
+  }
+  .concept .form .flex .button button {
+    width: 100px;
+  }
+  .concept .form .flex .font {
+    font-size: 10px;
+  }
+  .concept .heading {
+    font-size: 15px;
+  }
+
+  .about .list {
+    font-size: 10px;
+    margin-bottom: 20px;
+    flex: 0 0 100%;
+  }
+}
